@@ -1,0 +1,10 @@
+<ag-grid-angular 
+id="orderGrid"
+*ngIf="(auth.isAuthenticated$ | async) === true"
+[animateRows]="true"
+[getRowId]="getRowId"
+[gridOptions]="gridOptions"
+[masterDetail]="true"
+style="width: 100%; height: 95%;" 
+class="ag-theme-balham-dark"
+[rowData]="rowData$ | async"></ag-grid-angular>
